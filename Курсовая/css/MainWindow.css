@@ -1,0 +1,43 @@
+QWidget {
+    background-color: #404049;
+    color: #9ecedd;
+    font-family: Verdana;
+    font-size: 16pt;
+    margin: 10px;
+}
+
+QPushButton {
+    color: #9ecedd;
+    border: 2px solid #b0bbbd;
+    border-radius: 5px;
+}
+
+QPushButton#btn_lower,
+#btn_upper,
+#btn_digits,
+#btn_special {
+    padding: 10px;
+}
+
+QPushButton:hover {
+    color:#0ba5d3;
+    border-color: #0ba5d3;
+}
+
+QPushButton:pressed {
+    border: 4px solid #0ba5d3;
+    border-radius: 5px;
+}
+
+QPushButton:checked {
+    background-color: #0ba5d3;
+    border-color: #0ba5d3;
+}
+QTreeView{
+    background-color: #034052;
+    border-color: transparent;
+    border: 4px solid #0ba5d3;
+}
+QTreeView{
+    background-color: #0a2f44;
+}
