@@ -16,7 +16,7 @@ class Variables:
     login_window = None
     main_window = None
     usb_id_product_hash = ""
-    disk = yadisk.YaDisk(token = 'y0_AgAAAAAjaLh8AAjklAAAAADXIucEEugnEiGdRmawo04eu9Dra4Vl94c')
+    disk = yadisk.YaDisk(token = '')
 
 def init_main_window():
     Variables.main_window = MainApp()
