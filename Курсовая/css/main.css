@@ -1,0 +1,17 @@
+.xdmenu{
+    background-color: #2d2c3a;
+    border: 1px solid #89beb3;
+    color: #e8e8e8;
+    border: 2px solid #747282;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+QMenu::item:selected{
+    background-color: #89beb3;
+    color: #2d2c3a;
+}
+QTableView::item:selected{
+    background-color: #718F89;
+}
