@@ -1,0 +1,12 @@
+<RCC>
+  <qresource prefix="css">
+    <file>btn_copy.css</file>
+    <file>btn_refresh.css</file>
+    <file>btn_visibility.css</file>
+    <file>frame_password.css</file>
+    <file>line_password.css</file>
+    <file>spinbox_length.css</file>
+    <file>slider_length.css</file>
+    <file>MainWindow.css</file>
+  </qresource>
+</RCC>
