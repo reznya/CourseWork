@@ -1,0 +1,37 @@
+[
+    {
+        "name": "/Users/nikita/Desktop/test_folder/xd.jpg",
+        "hash": "64602e3fbb0eecac9675cddcc9e3e4561705efea",
+        "date": "2022-02-26 16:23:11"
+    },
+    {
+        "name": "/Users/nikita/Desktop/test_folder/get-pip.py",
+        "hash": "7d6eb3d14021ade1b47a7c0bdb3338a6acb7776e",
+        "date": "2021-02-16 14:53:30"
+    },
+    {
+        "name": "/Users/nikita/Desktop/test_folder/\u0415\u0308\u0436\u0438\u043a.jpg",
+        "hash": "c0d0f0eb5a5addf9dc0f09e31795397f114cca6b",
+        "date": "2020-10-26 23:14:58"
+    },
+    {
+        "name": "/Users/nikita/Desktop/test_folder/test_file.txt",
+        "hash": "ad8432cc8f74fb1374c4084c1662de0c63c5391c",
+        "date": "2021-03-03 10:53:12"
+    },
+    {
+        "name": "/Users/nikita/Desktop/test_folder/config.log",
+        "hash": "eef8f54d784d35fd87e46e847e0bea72ecbfc715",
+        "date": "2020-06-07 21:14:41"
+    },
+    {
+        "name": "/Users/nikita/Desktop/test_folder/file.js",
+        "hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+        "date": "2020-09-10 16:37:36"
+    },
+    {
+        "name": "/Users/nikita/Desktop/test_folder/1 \u043f\u0443\u043d\u043a\u0442.docx",
+        "hash": "6af73a09a8e04995bdbfec957593d16e5829dba1",
+        "date": "2022-12-22 16:32:55"
+    }
+]
