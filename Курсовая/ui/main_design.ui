@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1278</width>
+    <height>660</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Приложение</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">@import url('https://fonts.googleapis.com/css2family=Roboto:ital,wght@0,300;0,400;1,300&amp;display=swap');
+QWidget {    
+background-color: #2d2c3a;    
+color: #e8e8e8;    
+font-family: Roboto;    
+font-weight: 400;    
+font-size: 16pt;
+}
+QTabBar::tab {
+    background: #6B7581;
+    border: 2px solid #747282;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    min-width: 5ex;
+    margin-left: 5px; 
+}
+
+QTabBar::tab:selected, QTabBar::tab:hover {
+    background-color: #404049;
+    color: #89beb3;
+    border-color: #89beb3;
+}
+
+
+QTabBar::tab:!selected {
+    margin-top: 4px;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+QTabBar::tab:selected {
+    margin-left: 4px;
+    margin-right: 4px;
+}
+QTabBar::tab:first:selected {
+    margin-left: 0; 
+    margin-right: 4; 
+}
+
+QTabBar::tab:last:selected {
+    margin-right: ; 
+    margin-left: 4; 
+}
+
+QTabBar::tab:only-one {
+    margin: 0; 
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_3">
+    <item row="0" column="0">
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <widget class="QTabWidget" name="tabWidget">
+        <property name="cursor">
+         <cursorShape>ArrowCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QTreeView::item:selected{
+    background-color: #89beb3;
+    color: #2d2c3a\n;
+}
+QTabWidget {
+color: black;
+}
+QHeaderView::section {
+    background-color: #718F89;
+    color: white;
+    padding-left: 4px;
+    border: 1px solid #6c6c6c;
+border-color: #89beb3;
+}
+
+QHeaderView::section:checked
+{
+    background-color: red;
+}
+</string>
+        </property>
+        <property name="currentIndex">
+         <number>1</number>
+        </property>
+        <widget class="QWidget" name="files_tab">
+         <attribute name="title">
+          <string>Файлы</string>
+         </attribute>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <layout class="QGridLayout" name="gridLayout_2">
+            <item row="0" column="0">
+             <widget class="QTreeView" name="treeView">
+              <property name="styleSheet">
+               <string notr="true">QTreeView::item:selected{
+    background-color: #718F89;
+}
+QMenu {
+    background-color: white;
+    margin: 2px; /* some spacing around the menu */
+}
+
+QMenu::item {
+    padding: 2px 25px 2px 20px;
+    border: 1px solid transparent; /* reserve space for selection border */
+}
+
+QMenu::item:selected {
+    border-color: darkblue;
+    background: rgba(100, 100, 100, 150);
+}
+
+QMenu::icon:checked { /* appearance of a 'checked' icon */
+    background: gray;
+    border: 1px inset gray;
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    bottom: 1px;
+    left: 1px;
+}
+
+QMenu::separator {
+    height: 2px;
+    background: lightblue;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+QMenu::indicator {
+    width: 13px;
+    height: 13px;
+}</string>
+              </property>
+              <attribute name="headerDefaultSectionSize">
+               <number>140</number>
+              </attribute>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="data_integer_tab">
+         <attribute name="title">
+          <string>Проверка целостности</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout_4">
+          <item row="2" column="1">
+           <widget class="QPushButton" name="backup_btn">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>Выполнить резервное копирование</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QPushButton" name="hashes_to_file_btn">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>Запись данных о целостности в файл</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="1">
+           <widget class="QPushButton" name="check_integrity_btn">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>Проверить все файлы на целостность</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <spacer name="verticalSpacer">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="3" column="1">
+           <spacer name="verticalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="0" column="0" rowspan="5">
+           <widget class="QTableView" name="tableView"/>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="logs_tab">
+         <attribute name="title">
+          <string>Логи</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout_5">
+          <item row="0" column="0">
+           <widget class="QFrame" name="logs_frame">
+            <property name="styleSheet">
+             <string notr="true">QFrame {
+    color: #747282;
+    border: 2px solid #747282;
+    border-radius: 5px;
+}
+QFrame:hover {
+    border-color: #89beb3;
+}</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_6">
+             <item row="0" column="0">
+              <widget class="QPlainTextEdit" name="logs_TextEdit">
+               <property name="styleSheet">
+                <string notr="true">QPlainTextEdit {
+    border: none;
+    margin: 0;
+    font-size: 14pt;
+    font-family: Roboto;
+
+}
+
+
+</string>
+               </property>
+               <property name="readOnly">
+                <bool>false</bool>
+               </property>
+               <property name="backgroundVisible">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../css/resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
